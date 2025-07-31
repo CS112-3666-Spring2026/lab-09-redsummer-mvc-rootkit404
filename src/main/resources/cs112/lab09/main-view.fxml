@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="cs112.lab09.controllers.MainController">
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MainController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="titleLabel" alignment="CENTER" prefHeight="17.0" prefWidth="203.0" text="Interactive Indigenous History Map">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Label>
+   <Label fx:id="subtitleLabel" alignment="CENTER" layoutX="90.0" layoutY="156.0" prefHeight="17.0" prefWidth="139.0" text="Red Summer Edition">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Label>
+   <Label fx:id="welcomeText11" alignment="CENTER" layoutX="90.0" layoutY="175.0" minHeight="-Infinity" text="In 1919, Red Summer was a pattern of white-on-black violence that occurred in more than three dozen cities across the United States and in one rural county in Arkansas. The term &quot;Red Summer&quot; was coined by civil rights activist and author James Weldon Johnson, who had been employed as a field secretary by the National Association for the Advancement of Colored People (NAACP) since 1916. It was branded 'Red Summer&quot; because of the bloodshed that occurred during the worst white-on-black violence in U.S. history." textAlignment="CENTER" wrapText="true" />
+   <ImageView fx:id="logoImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button fx:id="startButton" alignment="CENTER" mnemonicParsing="false" onAction="#onStartButtonClicked" text="Start" />
+         <Button fx:id="quitButton" mnemonicParsing="false" onAction="#onQuitButtonClicked" text="Quit" />
+      </children></HBox>
 </VBox>

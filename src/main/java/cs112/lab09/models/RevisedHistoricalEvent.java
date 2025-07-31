@@ -32,7 +32,7 @@ public class RevisedHistoricalEvent extends HistoricalEvent {
 	* Default constructor sets RevisedHistoricalEvent object to default values.
 	*/
 	// Default Constructor
-	public RevisedHistoricalEvent() {
+	public RevisedHistoricalEvent(String s, Date date, String string) {
 		this(HistoricalEvent.DEFAULT_DESCRIPTION,HistoricalEvent.DEFAULT_EVENT_DAY,DEFAULT_REVISED_DESCRIPTION,DEFAULT_CITATION);
 	}
 	
